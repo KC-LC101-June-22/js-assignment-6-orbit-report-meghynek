@@ -16,6 +16,8 @@ export class Satellite {
 	
 	isSpaceDebris(): boolean {
 		if (this.type === 'Space Debris'){ 
+			const debrisYes = document.getElementById("debris");
+			debrisYes.classList.add("warning");
 			return true;
 		} else {
 			return false;
